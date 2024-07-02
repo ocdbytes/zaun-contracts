@@ -1,0 +1,9 @@
+[submodule "lib/forge-std"]
+	path = lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "lib/starknet-token"]
+	path = lib/starknet-token
+	url = https://github.com/starknet-io/starknet-token
+[submodule "lib/cairo-lang"]
+	path = lib/cairo-lang
+	url = https://github.com/starkware-libs/cairo-lang
