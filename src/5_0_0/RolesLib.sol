@@ -122,6 +122,12 @@ library RolesLib {
 
     function initGovernanceRoles(address provisionalGovernor) private {
         AccessControl._grantRole(GOVERNANCE_ADMIN, provisionalGovernor);
+        AccessControl._grantRole(APP_GOVERNOR, provisionalGovernor);
+        AccessControl._grantRole(APP_ROLE_ADMIN, provisionalGovernor);
+        AccessControl._grantRole(OPERATOR, provisionalGovernor);
+        AccessControl._grantRole(TOKEN_ADMIN, provisionalGovernor);
+        AccessControl._grantRole(UPGRADE_GOVERNOR, provisionalGovernor);
+
         AccessControl._setRoleAdmin(APP_GOVERNOR, APP_ROLE_ADMIN);
         AccessControl._setRoleAdmin(APP_ROLE_ADMIN, GOVERNANCE_ADMIN);
         AccessControl._setRoleAdmin(GOVERNANCE_ADMIN, GOVERNANCE_ADMIN);
